@@ -1,0 +1,25 @@
+@import '../../../styles-helpers/helpers';
+
+$baseWidth: 8.3333333%; 
+@each $size in $breakpoints {
+    @for $i from 1 to 13 {
+       $currentSize: 0px;
+       @if $size == 'xs'{
+         $currentSize: $xs;
+       } @else if  $size == 'sm'{
+         $currentSize: $sm;
+       } @else if $size == 'md'{
+         $currentSize: $md;
+       }@else if $size == 'lg'{
+         $currentSize: $lg;
+       }@else if $size == 'xl'{
+         $currentSize: $xl;
+       }
+        @media (min-width: #{$currentSize}) {
+           .columns_#{$size}_#{$i}{
+                flex: 0 0 $baseWidth * $i;
+                max-width: $baseWidth * $i;
+            }
+        }
+    }
+ }

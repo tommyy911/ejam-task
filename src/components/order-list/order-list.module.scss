@@ -1,0 +1,12 @@
+@import '../../styles-helpers/helpers';
+
+.orderListContainer{
+    display: flex;
+    flex-direction: column;   
+    & th,td{
+        font-size: 1rem;
+        text-align: left;
+        padding: 10px;
+        border: 1px solid $defaultBorder;
+    }
+}

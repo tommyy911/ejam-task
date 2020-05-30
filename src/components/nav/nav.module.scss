@@ -1,0 +1,11 @@
+@import '../../styles-helpers/helpers';
+
+.header{
+    text-align: left;
+    padding: 0 7px;
+    font-size: 1rem;
+    border-bottom: 1px solid $defaultBorder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

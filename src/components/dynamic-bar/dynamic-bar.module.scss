@@ -1,0 +1,23 @@
+@import '../../styles-helpers/helpers';
+
+$formHeight: 230px;
+
+.barHeader{
+    margin-top: 30px;
+    padding: 7px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid $defaultBorder;
+}
+
+.barBody{
+    margin: 20px 0;
+}
+
+
+.title{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}

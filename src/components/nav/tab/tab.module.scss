@@ -1,0 +1,21 @@
+@import '../../../styles-helpers/helpers';
+
+.tab{
+    display: block;
+    padding: 7px;
+    cursor: pointer;
+    transition: border-bottom .5s;
+    border: none;
+    border-bottom: 3px solid transparent;
+    &:hover{
+        border-bottom: 3px solid $defaultBorder;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+.tabActive{
+    composes: tab;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 3px solid $defaultBorder;
+}

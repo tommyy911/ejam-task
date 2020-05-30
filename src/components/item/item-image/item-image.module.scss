@@ -1,0 +1,11 @@
+$heightImage: 400px;
+
+.itemImageContainer{
+    padding: 0 30px;
+    text-align: center;
+    & > img{
+        width: auto;
+        max-height: $heightImage;
+        height: 100%;
+    }
+}
