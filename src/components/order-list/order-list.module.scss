@@ -2,7 +2,8 @@
 
 .orderListContainer{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;  
+    overflow: scroll; 
     & th,td{
         font-size: 1rem;
         text-align: left;
